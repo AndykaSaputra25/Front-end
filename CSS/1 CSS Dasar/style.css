@@ -1,0 +1,33 @@
+body {
+    /* background-color: lavender; */
+    background-image: url(gambar/pola.jpg);
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-variant: small-caps;
+    text-align: center;
+    color: darkcyan;
+    font-style: italic;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    text-align: justify;
+    text-indent: 35px;
+}
+
+.pindah:hover {
+    color: green;
+    font-size: 20px;
+}
+.pindah:active {
+    font-style: italic;
+    font-size: 20px;
+    color: red;
+}
+.pindah:visited {
+    color: darkmagenta;
+}

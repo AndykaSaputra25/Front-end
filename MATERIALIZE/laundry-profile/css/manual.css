@@ -1,0 +1,24 @@
+.slider h3 {
+    text-shadow: 1px, 1px, 3px rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+.kontak {
+    padding: 8px;
+}
+
+.parallax-container {
+    height: 250px;
+}
+.parallax-container img {
+    width: 250px;
+}
+
+.mitra img {
+    max-width: 150px;
+}
+
+section, footer {
+    padding: 5px 0;
+}
+
