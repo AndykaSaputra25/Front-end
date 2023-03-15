@@ -1,0 +1,444 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+    background-color: #dfe8f3;
+}
+
+header {
+    background-color: rgb(27, 27, 61);
+    color: #97c0f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 97%;
+    z-index: 1;
+}
+  
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+.logo img {
+    height: 20px;
+    padding-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+nav li {
+    margin-left: 20px;
+}
+  
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #bacff0;
+    padding: 7px 1px;
+    border-radius: 25%;
+    transition: all 0.3s ease-in-out;
+}
+  
+.toggle {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    display: none;
+}
+
+
+
+
+.banner {
+    background-image: url("gambar/banner.jpg");
+    background-size: cover;
+    height: 500px;
+    margin-top: 55px;
+}
+
+
+
+
+.container {
+    padding: 40px;
+}
+.container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+.about-us {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-us .logo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 30%;
+}
+.about-us .logo img {
+    width: 50%;
+    height: auto;
+}
+.about-us article {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    width: 70%;
+    text-align: justify;
+}
+
+
+
+
+
+.tours {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.tours h4 {
+    text-align: center;
+}
+.tours .perjalanan {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    width: 60%;
+    text-align: justify;
+}
+.tours .layanan {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    width: 36%;
+    text-align: justify;
+}
+
+
+
+
+
+.formulir form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.formulir ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 600px;
+}
+  
+.formulir li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+  
+.formulir label {
+    font-weight: bold;
+    margin-bottom: 5px;
+} 
+.formulir input,
+  textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a848;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+button:hover {
+    background-color: #04300b;
+}
+
+
+
+
+footer {
+    background-color: rgb(27, 27, 61);
+    color: white;
+    padding: 1px;
+    text-align: center;
+}
+
+
+
+
+.galeri {
+    width: 70%;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery li a img {
+    border-radius: 50%;
+}
+.gallery li {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid gainsboro;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+.gallery li span {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(200, 200, 200, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 120px;
+    color: black;
+    text-shadow: 1px 1px 1px gainsboro;
+    opacity: 0;
+    transition: .3s;
+}
+.gallery li a:hover span{
+    opacity: 1;
+}
+
+.clear {
+    clear: both;
+}
+
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 9999;
+    transition: .8s;
+    text-align: center;
+    padding: 100px 0;
+}
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlay img {
+    max-height: 100%;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+}
+.overlay:target img {
+    animation: fade 1s;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -20px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border: 1px solid white;
+    line-height: 14px;
+    padding: 5px;
+    opacity: 0;
+}
+.overlay:target .close {
+    animation: slideDownFade .5s .5s forwards;
+}
+
+.next, .prev {
+    width: 93px;
+    height: 57px;
+    background-image: url(gambar/arrows/kanan.png);
+    position: absolute;
+    text-indent: -9999px;
+    top: 40%;
+    margin-left: 50px;
+    opacity: 0;
+}
+.prev {
+    background-image: url(gambar/arrows/kiri.png);
+    margin-left: -150px;
+}
+.overlay:target .prev,
+.overlay:target .next {
+    animation: fade .5s .5s forwards;
+}
+
+/* animasi */
+@keyframes zoomDanFade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDownFade {
+    0% {
+        opacity: 0;
+        margin-top: -20px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+@media screen and (max-width: 992px) {
+    .logo {
+      font-size: 24px;
+    }
+    
+    nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: rgb(43, 43, 75);
+      padding: 10px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+      
+    nav li {
+        margin: 10px;
+    }
+    
+    .toggle {
+        display: block;
+        padding-right: 20px;
+    }
+
+    .logo + nav.active {
+        display: flex;
+    }
+
+    .banner {
+    height: 300px;
+    margin-top: 8%;
+    background-image: url("gambar/banner.jpg");
+    background-size: cover;
+    }    
+
+    .about-us {
+        margin-bottom: 30px;
+        display: block;
+    }
+    .about-us .logo {
+        width: 100%;
+        text-align: center;
+    }
+    .about-us .logo img {
+        width: 15%;
+        height: auto;
+    }
+    .about-us article {
+        width: 100%;
+    }
+
+    .tours {
+        margin-bottom: 20px;
+        display: block;
+    }
+    .tours h4 {
+        text-align: center;
+        font-size: 14px;
+        padding-top: 50px;
+    }
+    .tours .perjalanan {
+        width: 100%;
+    }
+    .tours .layanan {
+        width: 100%;
+    }
+
+    .galeri {
+        width: 40%;
+        margin: 70px auto;
+        padding: 10px;
+    }
+    
+}

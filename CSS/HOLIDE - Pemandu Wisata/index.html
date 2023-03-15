@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOLIDE - Pemandu Wisata</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<!-- 3. Bagian Body -->
+<!-- 6. Animasi dalam Body -->
+<!-- 7. Desain Responsif ada Pada CSS -->
+<body>
+<!-- 1. Header -->
+	<header>
+        <div class="logo">
+            <img src="gambar/logo-white.png" alt="logo">HOLIDE
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#about-us">About</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#galeri">Gallery</a></li>
+            <li><a href="#form">Form</a></li>
+          </ul>
+        </nav>
+        <div class="toggle">&#9776;</div>
+    </header>
+<!-- 2. Bagian Main -->
+	<main>
+		<section class="banner" id="banner"></section>
+        <div class="container">
+            <section class="about-us" id="about-us">
+                <h1>Tentang Kami</h1>
+                <div class="logo"><img src="gambar/logo.png" alt="HOLIDE"></div>
+                <article>
+                    <p>HOLIDE adalah perusahaan yang bergerak di bidang jasa pemandu wisata di seluruh Indonesia. Kami menawarkan berbagai paket perjalanan wisata yang sesuai dengan kebutuhan dan preferensi Anda.</p>
+                    <p>Kami memiliki tim pemandu wisata profesional yang berpengalaman dan berpengetahuan luas tentang berbagai objek wisata di Indonesia. Mereka siap membantu Anda untuk menikmati pengalaman wisata yang tak terlupakan di Indonesia.</p>
+                </article>
+            </section>
+
+
+            <section class="tours" id="tours">
+                <h1>Perjalanan Wisata</h1>
+                <article class="perjalanan">
+                    <h4>Koordinator Wilayah</h4>
+                    <p>Kami memiliki tim pemandu wisata yang berpengalaman dan berpengetahuan luas tentang berbagai objek wisata di Indonesia. Berikut adalah koordinator wilayah tim kami:</p>
+                    <ol>
+                        <li>Andyka Saputra - Jawa & Bali</li>
+                        <li>Winda Eka - Lombok & Komodo</li>
+                        <li>Padi Wibowo -  Sumatera & Kalimantan</li>
+                        <li>Siti Sumarni -  Sulawesi & Maluku</li>
+                        <li>Clara Indah - Maluku & Papua</li>
+                    </ol>
+                </article>
+                <article class="layanan">
+                    <h4>Layanan Kami</h4>
+                    <ul>
+                        <li>Pemandu wisata lokal yang berpengalaman</li>
+                        <li>Paket tur khusus dan beragam</li>
+                        <li>Transportasi yang nyaman dan aman</li>
+                        <li>Informasi tentang tempat wisata terbaru</li>
+                        <li>Dan masih banyak lagi informasi dan keseruan bersama kami</li>
+                    </ul>
+                </article>
+            </section>
+
+
+            <section class="galeri" id="galeri">
+                <h1>Galeri Tempat Wisata</h1>
+                <ul class="gallery">
+                    <li>
+                        <a href="#gambar-1">
+                            <img src="gambar/half/bromoMini.png" alt="Gunung Bromo">
+                            <span>Gunung Bromo</span>
+                        </a>
+                        <div class="overlay" id="gambar-1">
+                            <a href="#" class="close">x close</a>
+                            <a href="#gambar-4" class="prev">prev</a>
+                            <img src="gambar/full/bromo.png" alt="Gunung Bromo">
+                            <a href="#gambar-2" class="next">next</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#gambar-2">
+                            <img src="gambar/half/komodoMini.png" alt="Pulau Komodo">
+                            <span>Pulau Komodo</span>
+                        </a>
+                        <div class="overlay" id="gambar-2">
+                            <a href="#" class="close">x close</a>
+                            <a href="#gambar-1" class="prev">prev</a>
+                            <img src="gambar/full/komodo.png" alt="Pulau Komodo">
+                            <a href="#gambar-3" class="next">next</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#gambar-3">
+                            <img src="gambar/half/tumsewMini.png" alt="Tumpak Sewu">
+                            <span>Tumpak Sewu</span>
+                        </a>
+                        <div class="overlay" id="gambar-3">
+                            <a href="#" class="close">x close</a>
+                            <a href="#gambar-2" class="prev">prev</a>
+                            <img src="gambar/full/tumsew.png" alt="Tumpak Sewu">
+                            <a href="#gambar-4" class="next">next</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#gambar-4">
+                            <img src="gambar/half/rapatMini.png" alt="Raja Ampat">
+                            <span>Raja Ampat</span>
+                        </a>
+                        <div class="overlay" id="gambar-4">
+                            <a href="#" class="close">x close</a>
+                            <a href="#gambar-3" class="prev">prev</a>
+                            <img src="gambar/full/rapat.png" alt="Raja Ampat">
+                            <a href="#gambar-1" class="next">next</a>
+                        </div>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </section>
+
+<!-- 4. Bagian Formulir -->
+            <section class="formulir" id="form">
+                <h1>Formulir</h1>
+                <form>
+                    <ul>
+                      <li>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                      </li>
+                      <li>
+                        <label for="name">Nama:</label>
+                        <input type="text" id="name" name="name" required>
+                      </li>
+                      <li>
+                        <label for="phone">Nomor HP:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                      </li>
+                      <li>
+                        <label for="purpose">Tujuan:</label>
+                        <input type="text" id="purpose" name="purpose" required>
+                      </li>
+                      <li>
+                        <label for="message">Pesan:</label>
+                        <textarea id="message" name="message" required></textarea>
+                      </li>
+                    </ul>
+                    <button type="submit">Kirim</button>
+                </form>                
+            </section>
+        </div>	
+	</main>
+
+<!-- 5. Bagian Footer -->
+	<footer>
+		<p>&copy; 2023 HOLIDE - Pemandu Wisata Indonesia</p>
+	</footer>
+</body>
+<script>
+    const toggle = document.querySelector('.toggle');
+    const nav = document.querySelector('nav');
+
+    toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+    });
+</script>
+</html>
